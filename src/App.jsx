@@ -7,7 +7,7 @@ const App = () => {
         Any UPI App
       </a>
       <br />
-      <a href="gpay://pay?pa=upiaddress@okhdfcbank&pn=JohnDoe&cu=INR">Gpay</a>
+      <a href="tez://pay?pa=upiaddress@okhdfcbank&pn=JohnDoe&cu=INR">Gpay</a>
       <br />
       <a href="phonepe://pay?pa=upiaddress@okhdfcbank&pn=JohnDoe&cu=INR">
         PhonePe
