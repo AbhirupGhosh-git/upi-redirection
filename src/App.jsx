@@ -13,7 +13,7 @@ const App = () => {
         PhonePe
       </a>
       <br />
-      <a href="paytm://pay?pa=upiaddress@okhdfcbank&pn=JohnDoe&cu=INR">PayTm</a>
+      <a href="paytmmp://pay?pa=upiaddress@okhdfcbank&pn=JohnDoe&cu=INR">PayTm</a>
       <br />
       <a href="amazonpay://pay?pa=upiaddress@okhdfcbank&pn=JohnDoe&cu=INR">
         Amazon Pay
