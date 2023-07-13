@@ -17,7 +17,7 @@ const App = () => {
       <br />
       <a href="paytmmp://pay?pa=upiaddress@okhdfcbank&pn=JohnDoe&cu=INR">PayTm</a>
       <br />
-      <a href="amazonpay://pay?pa=upiaddress@okhdfcbank&pn=JohnDoe&cu=INR">
+      <a href="amzn1://pay?pa=upiaddress@okhdfcbank&pn=JohnDoe&cu=INR">
         Amazon Pay
       </a>
     </React.Fragment>
