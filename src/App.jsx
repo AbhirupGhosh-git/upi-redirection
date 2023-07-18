@@ -6,14 +6,14 @@ const App = () => {
 
     const appURLs = {
       paytm: "paytmmp://pay?pa=upiaddress@okhdfcbank&pn=JohnDoe&cu=INR",
-      gpay: "amazon://upi/pay?pa=upiaddress@okhdfcbank&pn=JohnDoe&cu=INR",
+      gpay: "gpay://upi/pay?pa=upiaddress@okhdfcbank&pn=JohnDoe&cu=INR",
       phonepe: "phonepe://pay?pa=upiaddress@okhdfcbank&pn=JohnDoe&cu=INR",
     };
     setTimeout(() => {
       window.location = appURLs[e.target.id];
     }, 100);
     window.location =
-      "hhttps://play.google.com/store/apps/details?id=net.one97.paytm";
+      "https://play.google.com/store/apps/details?id=net.one97.paytm";
   };
 
   return (
