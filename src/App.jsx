@@ -1,20 +1,20 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 const App = () => {
-  const [data, setData] = useState("");
+  const redirectApp = (e) => {
+    console.log(e.target.id);
 
-  useEffect(() => {
-    let text = "Hello ";
-    (async () => {
-      const relatedApps = await navigator.getInstalledRelatedApps();
-      console.log(relatedApps);
-      relatedApps.forEach((app, i) => {
-        console.log(i, ":", app.id, app.platform, app.url);
-        text += app.id;
-      });
-    })();
-    setData(text);
-  }, []);
+    const appURLs = {
+      paytm: "paytmmp://pay?pa=upiaddress@okhdfcbank&pn=JohnDoe&cu=INR",
+      gpay: "amazon://upi/pay?pa=upiaddress@okhdfcbank&pn=JohnDoe&cu=INR",
+      phonepe: "phonepe://pay?pa=upiaddress@okhdfcbank&pn=JohnDoe&cu=INR",
+    };
+    setTimeout(() => {
+      window.location = appURLs[e.target.id];
+    }, 100);
+    window.location =
+      "https://play.google.com/store/apps/details?id=com.ea.game.nfs14";
+  };
 
   return (
     <React.Fragment>
@@ -41,7 +41,16 @@ const App = () => {
       <a href="amzn1://pay?pa=upiaddress@okhdfcbank&pn=JohnDoe&cu=INR">
         Amazon Pay
       </a>
-      <p>{data}</p>
+
+      <br />
+      <br />
+      <br />
+
+      <div onClick={redirectApp}>
+        <p id="gpay">Gpay</p>
+        <p id="phonepe">PhonePe</p>
+        <p id="paytm">Paytm</p>
+      </div>
     </React.Fragment>
   );
 };
