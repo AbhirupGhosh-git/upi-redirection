@@ -13,7 +13,7 @@ const App = () => {
       window.location = appURLs[e.target.id];
     }, 100);
     window.location =
-      "https://play.google.com/store/apps/details?id=com.ea.game.nfs14";
+      "hhttps://play.google.com/store/apps/details?id=net.one97.paytm";
   };
 
   return (
@@ -38,7 +38,7 @@ const App = () => {
         PayTm
       </a>
       <br />
-      <a href="amzn1://pay?pa=upiaddress@okhdfcbank&pn=JohnDoe&cu=INR">
+      <a href="amazon://pay?pa=upiaddress@okhdfcbank&pn=JohnDoe&cu=INR">
         Amazon Pay
       </a>
 
