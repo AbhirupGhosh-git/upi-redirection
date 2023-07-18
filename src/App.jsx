@@ -8,12 +8,13 @@ const App = () => {
       paytm: "paytmmp://pay?pa=upiaddress@okhdfcbank&pn=JohnDoe&cu=INR",
       gpay: "gpay://upi/pay?pa=upiaddress@okhdfcbank&pn=JohnDoe&cu=INR",
       phonepe: "phonepe://pay?pa=upiaddress@okhdfcbank&pn=JohnDoe&cu=INR",
+      amazon: "amazon://pay?pa=upiaddress@okhdfcbank&pn=JohnDoe&cu=INR",
     };
     setTimeout(() => {
-      window.location = appURLs[e.target.id];
+      window.location =
+        "https://play.google.com/store/apps/details?id=net.one97.paytm";
     }, 100);
-    window.location =
-      "https://play.google.com/store/apps/details?id=net.one97.paytm";
+    window.location = appURLs[e.target.id];
   };
 
   return (
@@ -46,7 +47,9 @@ const App = () => {
       <br />
       <br />
 
+      <p>App List</p>
       <div onClick={redirectApp}>
+        <p id="amazon">Amazon</p>
         <p id="gpay">Gpay</p>
         <p id="phonepe">PhonePe</p>
         <p id="paytm">Paytm</p>
