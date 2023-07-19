@@ -1,28 +1,28 @@
 import React from "react";
 
 const App = () => {
-  const redirectApp = (e) => {
-    console.log(e.target.id);
+  // const redirectApp = (e) => {
+  //   console.log(e.target.id);
 
-    const appURLs = {
-      paytm: "paytmmp://pay?pa=9163608399@ybl&pn=Abhirup&cu=INR&am=1",
-      gpay: "gpay://upi/pay?pa=upiaddress@okhdfcbank&pn=JohnDoe&cu=INR",
-      phonepe: "phonepe://pay?pa=upiaddress@okhdfcbank&pn=JohnDoe&cu=INR",
-      amazon: "amazon://pay?pa=upiaddress@okhdfcbank&pn=JohnDoe&cu=INR",
-    };
-    setTimeout(() => {
-      window.location =
-        "https://play.google.com/store/apps/details?id=net.one97.paytm";
-    }, 100);
-    window.location = appURLs[e.target.id];
-  };
+  //   const appURLs = {
+  //     paytm: "paytmmp://pay?pa=9163608399@ybl&pn=Abhirup&cu=INR&am=1",
+  //     gpay: "gpay://upi/pay?pa=upiaddress@okhdfcbank&pn=JohnDoe&cu=INR",
+  //     phonepe: "phonepe://pay?pa=upiaddress@okhdfcbank&pn=JohnDoe&cu=INR",
+  //     amazon: "amazon://pay?pa=upiaddress@okhdfcbank&pn=JohnDoe&cu=INR",
+  //   };
+  //   setTimeout(() => {
+  //     window.location =
+  //       "https://play.google.com/store/apps/details?id=net.one97.paytm";
+  //   }, 100);
+  //   window.location = appURLs[e.target.id];
+  // };
 
   return (
     <React.Fragment>
-      <a href="upi://pay?pa=9163608399@ybl&pn=Abhirup&cu=INR&am=1">
+      <a href="upi://pay?pa=9163608399@ybl&pn=Abhirup&cu=INR&am=1&tn='Testing UPI Payment'">
         Any UPI App
       </a>
-      <br />
+      {/* <br />
       <a href="tez://upi/pay?pa=upiaddress@okhdfcbank&pn=JohnDoe&cu=INR">
         Tez (Gpay)
       </a>
@@ -53,7 +53,7 @@ const App = () => {
         <p id="gpay">Gpay</p>
         <p id="phonepe">PhonePe</p>
         <p id="paytm">Paytm</p>
-      </div>
+      </div> */}
     </React.Fragment>
   );
 };
