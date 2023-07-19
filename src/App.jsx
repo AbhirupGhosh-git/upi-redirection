@@ -5,7 +5,7 @@ const App = () => {
     console.log(e.target.id);
 
     const appURLs = {
-      paytm: "paytmmp://pay?pa=upiaddress@okhdfcbank&pn=JohnDoe&cu=INR",
+      paytm: "paytmmp://pay?pa=9163608399@ybl&pn=Abhirup&cu=INR&am=1",
       gpay: "gpay://upi/pay?pa=upiaddress@okhdfcbank&pn=JohnDoe&cu=INR",
       phonepe: "phonepe://pay?pa=upiaddress@okhdfcbank&pn=JohnDoe&cu=INR",
       amazon: "amazon://pay?pa=upiaddress@okhdfcbank&pn=JohnDoe&cu=INR",
