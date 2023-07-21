@@ -19,7 +19,7 @@ const App = () => {
 
   return (
     <React.Fragment>
-      <a href="upi://pay?pa=9163608399@ybl&pn=Abhirup&cu=INR&am=1&tn='Testing UPI Payment'">
+      <a href="upi://pay?pa=9163608399@ybl&pn=Abhirup Ghosh&cu=INR&am=1&tn=Testing UPI Payment&mode=04">
         Any UPI App
       </a>
       {/* <br />
