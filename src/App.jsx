@@ -19,8 +19,8 @@ const App = () => {
 
   return (
     <React.Fragment>
-      <a href="upi://pay?pa=9163608399@ybl&pn=Abhirup Ghosh&cu=INR&tn=Testing UPI Payment&mode=04&mc=0000">
-        Any UPI App - Amount Removed
+      <a href="upi://pay?pa=9163608399@ybl&pn=Abhirup Ghosh&mode=04&mc=0000&purpose=00">
+        Any UPI App - PP
       </a>
       {/* <br />
       <a href="tez://upi/pay?pa=upiaddress@okhdfcbank&pn=JohnDoe&cu=INR">
