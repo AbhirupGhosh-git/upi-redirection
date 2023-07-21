@@ -19,8 +19,8 @@ const App = () => {
 
   return (
     <React.Fragment>
-      <a href="upi://pay?pa=hrupam55@okaxis&pn=Rupam Hari&cu=INR&am=1.00&tn=Testing UPI Payment&mode=02">
-        Any UPI App - Whatsapp
+      <a href="upi://pay?pa=hrupam55@okaxis&pn=Rupam Hari&cu=INR&am=1.00&tn=Testing UPI Payment">
+        Any UPI App - Whatsapp - Mode Removed
       </a>
       {/* <br />
       <a href="tez://upi/pay?pa=upiaddress@okhdfcbank&pn=JohnDoe&cu=INR">
