@@ -23,8 +23,8 @@ const App = () => {
         Any UPI App - Whatsapp - Mode Removed
       </a>
 
-      <p>Auto Complete: Off</p>
-      <input type="password" autoComplete="off" />
+      <p>Auto Complete: New Password</p>
+      <input type="password" autoComplete="new-password" />
       <br />
       <p>Auto Complete: Default</p>
       <input type="password" />
