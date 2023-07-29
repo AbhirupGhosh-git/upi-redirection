@@ -22,6 +22,12 @@ const App = () => {
       <a href="upi://pay?pa=hrupam55@okaxis&pn=Rupam Hari&cu=INR&am=1.00&tn=Testing UPI Payment">
         Any UPI App - Whatsapp - Mode Removed
       </a>
+
+      <p>Auto Complete: Off</p>
+      <input type="password" autoComplete="off" />
+      <br />
+      <p>Auto Complete: Default</p>
+      <input type="password" />
       {/* <br />
       <a href="tez://upi/pay?pa=upiaddress@okhdfcbank&pn=JohnDoe&cu=INR">
         Tez (Gpay)
