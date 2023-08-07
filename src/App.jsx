@@ -22,9 +22,9 @@ useEffect(()=> {
 const isFocused= () => {
 let text;
 if(document.hasFocus())
-alert('Focused')
+document.body.style.backgroundColor='red'
 else
-alert('Focus Lost')
+document.body.style.backgroundColor = 'blue'
 }
 
 setInterval(isFocused, 1)
@@ -36,7 +36,7 @@ setInterval(isFocused, 1)
       <a href="upi://pay?pa=hrupam55@okaxis&pn=Rupam Hari&cu=INR&am=1.00&tn=Testing UPI Payment">
        1. Any UPI App - Whatsapp - Mode Removed
       </a>
-
+ 
       <p>Auto Complete: New Password</p>
       <input type="password" autoComplete="new-password" />
       <br />
